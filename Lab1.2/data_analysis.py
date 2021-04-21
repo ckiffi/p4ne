@@ -14,12 +14,12 @@ sheet = wb['Data']
 
 #Извлекаем содержимое столбцов А, С, D
 years = list(map(getvalue, sheet['A'][1:]))
-temperature = list(map(getvalue, sheet ['C'][1:]))
-activity = list(map(getvalue, sheet ['D'][1:]))
+temperature = list(map(getvalue, sheet['C'][1:]))
+activity = list(map(getvalue, sheet['D'][1:]))
 
 #Отображение списков на графике
-pyplot.plot(years,temperature, label = 'относительная температура')
-pyplot.plot(years,activity,label = 'активность солнца' )
+pyplot.plot(years, temperature, label='относительная температура')
+pyplot.plot(years, activity, label='активность солнца' )
 
 #Отображаем график
 pyplot.show()
